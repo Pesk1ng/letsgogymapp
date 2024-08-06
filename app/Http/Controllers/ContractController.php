@@ -48,7 +48,7 @@ class ContractController extends Controller
             'contract_name' => 'required|string|max:100',
             'contract_code' => 'nullable|string|max:255|unique:contracts',
             'contract_duration' => 'required|integer|min:1',
-            'fitness_center_id' => 'required|exists:fitness_centers,id',
+            'fitness_center_id' => 'exists:fitness_centers,id',
             'contract_amount' => 'required|integer|min:0',
         ]);
 

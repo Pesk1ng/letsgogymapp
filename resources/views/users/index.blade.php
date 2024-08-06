@@ -233,9 +233,14 @@
 
                                                 <div class="mb-4">
                                                     <label class="form-label" for="tag-user-passowrd">Mot de passe</label>
-                                                    <input type="text" class="form-control" id="tag-user-passowrd" name="passowrd" autocomplete="passowrd">
-                                                    <x-input-error :messages="$errors->get('passowrd')" class="mt-2" />
+                                                    <input type="password" class="form-control" id="tag-user-passowrd" name="password">
+                                                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
                                                 </div>
+                                                <div class="mb-4">
+                                                    <label class="form-label" for="tag-user-password-confirmation">Confirmez le mot de passe</label>
+                                                    <input type="password" class="form-control" id="tag-user-password-confirmation" name="password_confirmation">
+                                                    <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+                                                </div> 
                                                 
                                                 
                                                 <div class="mb-4">

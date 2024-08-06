@@ -171,7 +171,7 @@
                                             <a class="fw-semibold" data-bs-toggle="modal" data-bs-target="#modal-{{ $product->id }}">{{$product->product_name}}</a>
                                         </td>
                                         <td>
-                                            @if($product->product_stock > 0 && $product->product_stock < 10)
+                                            @if($product->product_stock >= 0 && $product->product_stock < 10)
                                                 <span class="badge bg-danger">{{ $product->product_stock }}</span>
                                             @else
                                                 <span class="badge bg-success">{{ $product->product_stock }}</span>

@@ -56,7 +56,7 @@ class ProductController extends Controller
             'product_stock' => 'nullable|numeric|min:0',
             'product_description' => 'required|string|max:250',
             'product_category_id' => 'required|exists:product_categories,id',
-            'fitness_center_id' => 'required|exists:fitness_centers,id',
+            'fitness_center_id' => 'exists:fitness_centers,id',
         ]);
 
         // Récupérer l'utilisateur actuellement authentifié
@@ -93,7 +93,7 @@ class ProductController extends Controller
             'product_stock' => 'nullable|numeric|min:0',
             'product_description' => 'required|string|max:250',
             'product_category_id' => 'required|exists:product_categories,id',
-            'fitness_center_id' => 'required|exists:fitness_centers,id',
+            'fitness_center_id' => 'exists:fitness_centers,id',
         ]);
 
         // Récupérer l'utilisateur actuellement authentifié
