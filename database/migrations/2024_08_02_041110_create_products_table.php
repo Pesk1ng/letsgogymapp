@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('product_name', 35);
             $table->decimal('product_price', 7, 0);
-            $table->decimal('product_stock', 5, 0)->nullable();
+            $table->decimal('product_stock', 5, 0)->nullable()->default(0);
             $table->string('product_description', 250);
             $table->foreignId('product_create_by')->constrained('users');
             $table->string('product_creator_name');
